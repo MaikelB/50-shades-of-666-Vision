@@ -26,6 +26,5 @@ public:
 	RGB getPixel(int i) const;
 
 private:
-	std::vector<int> * RGBPixelIndex = new std::vector<int>();
-	std::vector<std::pair<int[2], RGB>> * RGBLocPixel = new std::vector<std::pair<int[2], RGB>>();
+	std::vector<std::vector<std::vector<RGB>>> * pixels;
 };
