@@ -45,23 +45,17 @@ void RGBImageStudent::setPixel(int x, int y, RGB pixel) {
 }
 
 void RGBImageStudent::setPixel(int i, RGB pixel) {
-	int throwError = 0, e = 1 / throwError;
-
 	int x = (i % RGBImage::getHeight());
 	int y = ((i - x) / RGBImage::getWidth());
 
 	pixels[x][y][0] = { pixel };
 }
 
-RGB RGBImageStudent::getPixel(int x, int y) const {
-	int throwError = 0, e = 1 / throwError;
-	
+RGB RGBImageStudent::getPixel(int x, int y) const {	
 	return pixels[x][y][0][0];
 }
 
 RGB RGBImageStudent::getPixel(int i) const {
-	int throwError = 0, e = 1 / throwError;
-	
 	int x = (i % RGBImage::getHeight());
 	int y = ((i - x) / RGBImage::getWidth());
 
